@@ -1,8 +1,7 @@
 import React from 'react';
-// import { render } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
-import userEvent from '@testing-library/user-event';
 
 test('A página principal da Pokédex é renderizada ao carregar a URL: /', () => {
   const { getByText } = renderWithRouter(<App />);
@@ -36,7 +35,7 @@ test('Ao clicar no Home da barra de navegação é redirecionado para: /', () =>
     name: 'Home',
   });
   userEvent.click(homeLink);
-  const pathname = history.location.pathname;
+  const { pathname } = history.location;
   expect(pathname).toBe('/');
 });
 
@@ -47,7 +46,7 @@ test('Ao clicar no About da barra de navegação é redirecionado para: /about',
     name: 'About',
   });
   userEvent.click(aboutLink);
-  const pathname = history.location.pathname;
+  const { pathname } = history.location;
   expect(pathname).toBe('/about');
 });
 
@@ -58,14 +57,14 @@ test('Ao clicar no Fav. Pokémons da barra de nav. é redirecionado: /favorites'
     name: 'Favorite Pokémons',
   });
   userEvent.click(favLink);
-  const pathname = history.location.pathname;
+  const { pathname } = history.location;
   expect(pathname).toBe('/favorites');
 });
 
 test('É redirecionado para Not Found ao entrar em uma URL desconhecida', () => {
-  const { getByText, history} = renderWithRouter(<App />);
+  const { getByText, history } = renderWithRouter(<App />);
 
   history.push('/notfound');
   const notFound = getByText(/Page requested not found/i);
   expect(notFound).toBeInTheDocument();
-})
+});
