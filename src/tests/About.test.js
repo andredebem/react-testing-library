@@ -23,7 +23,7 @@ test('A página contém dois parágrafos com texto sobre a Pokédex', () => {
   const { getAllByText } = renderWithRouter(<About />);
 
   const p = getAllByText(/Pokémons/i);
-  expect(p.length).toBe(2);
+  expect(p).toHaveLength(2);
 });
 
 test('A página contém a imagem correta de uma Pokédex', () => {
