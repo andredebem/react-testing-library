@@ -39,7 +39,7 @@ test('É exibido o próximo Pokémon quando o botão "Próximo pokémon" é clic
   userEvent.click(nextPokeButton);
 
   currentPokeName = actualPokemon();
-  const lastPokeIndex = 9;
+  const lastPokeIndex = pokemons.length;
   const indexNextPoke = result[0] + 1;
   if (indexNextPoke > lastPokeIndex) {
     expect(currentPokeName).toBe(pokemons[0].name);
@@ -109,7 +109,7 @@ test('O botão de resetar o filtro funciona', () => {
   userEvent.click(nextPokeButton);
 
   currentPokemonName = actualPokemon();
-  const lastPokeIndex = 9;
+  const lastPokeIndex = pokemons.length;
   const indexNextPoke = result[0] + 1;
   if (indexNextPoke > lastPokeIndex) {
     expect(currentPokemonName).toBe(pokemons[0].name);
