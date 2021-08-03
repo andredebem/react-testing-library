@@ -11,17 +11,11 @@ Foi tomado um cuidado redobrado com [testes _falsos positivos_](https://talkinga
 # Sumário
 
   - [Habilidades](#habilidades)
-  - [Entregáveis](#entregáveis)
-    - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-    - [Desenvolvimento](#desenvolvimento)
-    - [Data de entrega](#data-de-entrega)
-  - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-    - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-    - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-    - [Como desenvolver](#como-desenvolver)
-      - [Linter](#linter)
-      - [Testes](#testes)
-      - [Quem testa os testes?](#quem-testa-os-testes)
+  - [Instruções](#instruções)
+    - [Para visualizar o projeto](#para-visualizar-o-projeto)
+    - [Commits](#commits)
+    - [Linter](#linter)
+  - [Como funcionam os testes?](#como-funcionam-os-testes)
   - [Requisitos do projeto](#requisitos-do-projeto)
     - [Lista de requisitos](#lista-de-requisitos)
       - [1. Teste o componente `<App.js />`](#1-teste-o-componente-appjs-)
@@ -32,8 +26,6 @@ Foi tomado um cuidado redobrado com [testes _falsos positivos_](https://talkinga
       - [6. Teste o componente `<Pokemon.js />`](#6-teste-o-componente-pokemonjs-)
       - [7. Teste o componente `<PokemonDetails.js />`](#7-teste-o-componente-pokemondetailsjs-)
       - [Quer fazer mais? Temos algumas sugestões!](#quer-fazer-mais-temos-algumas-sugestões)
-- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-- [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
 
 # Habilidades
